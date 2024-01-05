@@ -205,12 +205,15 @@ static void Instructions() {
     Console.ReadLine();
 }
 
+// If the game storage directory does not exist, create it!
+if (Directory.GetDirectories(Directory.GetCurrentDirectory()).Contains("Games") == false)
+{
+    Directory.CreateDirectory(Directory.GetCurrentDirectory()+"/Games");
+}
+
 // Check window sizing - if too small, warn the user (art does not display properly)
 bool failing = true;
-if (Console.WindowWidth == 0 && Console.WindowHeight == 0) { // if unable to detect window size
-    Console.WriteLine("Unable to detect window settings, press enter to continue.");
-    Console.ReadLine();
-} else if (Console.WindowWidth < 130 || Console.WindowHeight < 45) // otherwise, detect window size 
+if (Console.WindowWidth < 130 || Console.WindowHeight < 45)
 {
     Console.ForegroundColor = ConsoleColor.DarkYellow;
     Helpful.ShowArt("warning", -1, -1); // Show a warning triangle
@@ -229,13 +232,13 @@ if (Console.WindowWidth == 0 && Console.WindowHeight == 0) { // if unable to det
             // set color to red and display another message with current sizing, window still too small!
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Your window is still too small!");
-            Console.WriteLine("Your window is currently " + Console.WindowWidth + "x" + Console.WindowHeight + ".");
         }
         else
         {
             failing = false; // window sizing ok, close warning
         }
-    }   
+    }
+    
 }
 
 while (true) { // always show menu if any later ui stages are exited

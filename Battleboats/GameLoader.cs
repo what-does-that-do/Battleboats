@@ -18,6 +18,7 @@ public class GameLoader
                 }
             }
         }
+        ClearGrid();
 
         int selectedBoat = 0; // Set current boat to Carrier
         // Grab cursor co-ordinates so that only menu must be redrawn
@@ -270,19 +271,27 @@ public class GameLoader
         // Set text to yellow to indicate action
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("Please enter a name for your game.");
-        // Allow entry of text at the bottom of the window, put cursor in footer
-        Helpful.AddWindowFooter("[A-Z][0-9] Game name:");
-        Console.SetCursorPosition(17, Console.WindowHeight - 1);
+        cursorY = Console.CursorTop;
         // Get game name from user's entry
         string gameName = "";
         bool invalid = true;
         while (invalid) { // keep fetching entries until something valid has been entered
+            // Allow entry of text at the bottom of the window, put cursor in footer
+            Helpful.AddWindowFooter("[A-Z][0-9] Game name:");
+            Console.SetCursorPosition(22, Console.WindowHeight - 1);
             gameName = Console.ReadLine();
             if (gameName.Length > 0) { // if something has been entered
                 invalid = false; // innocent until proven guilty
                 foreach (char c in gameName) { // check if any characters are invalid
-                    if ((char.IsLetter(c) == false) || (char.IsLetter(c) == true)) { // if not a letter or a number
+                    if ((char.IsLetter(c) == false) && (char.IsDigit(c) == false) && c != ' ') { // if not a letter or a number or a space
                         invalid = true; // invalid
+                        // Write an error message to the output.
+                        Console.SetCursorPosition(0, cursorY);
+                        cursorY += 1;
+
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        Console.WriteLine("Something you entered was invalid: " + c);
                         break; // loop can be exited.
                     }
                 }
