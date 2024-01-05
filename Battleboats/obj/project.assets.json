@@ -8,24 +8,25 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/home/codespace/.nuget/packages/": {}
+    "/Users/oli-mac/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/Battleboats/Battleboats/Battleboats.csproj",
+      "projectUniqueName": "/Users/oli-mac/Developer/Battleboats/Battleboats/Battleboats.csproj",
       "projectName": "Battleboats",
-      "projectPath": "/workspaces/Battleboats/Battleboats/Battleboats.csproj",
-      "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/Battleboats/Battleboats/obj/",
+      "projectPath": "/Users/oli-mac/Developer/Battleboats/Battleboats/Battleboats.csproj",
+      "packagesPath": "/Users/oli-mac/.nuget/packages/",
+      "outputPath": "/Users/oli-mac/Developer/Battleboats/Battleboats/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/codespace/.nuget/NuGet/NuGet.Config"
+        "/Users/oli-mac/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -59,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.306/sdk/7.0.306/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
       }
     }
   }
