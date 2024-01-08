@@ -8,6 +8,7 @@ public class Helpful
         Console.BackgroundColor = ConsoleColor.DarkRed;
         Console.ForegroundColor = ConsoleColor.Black;
         string header = "Battleboats - " + text;
+        Console.Title = header; // Sets console window title
         WriteToEntireLine(header);
     }
 

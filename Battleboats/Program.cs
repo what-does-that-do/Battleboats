@@ -27,6 +27,9 @@ Console.WriteLine("Welcome to Battleboats!");
 
 static void ShowMenu()
 {
+    Console.BackgroundColor = ConsoleColor.Black;
+    Console.Clear(); // Fill window with black
+    
     Helpful.AddWindowHeader("MAIN MENU"); // Display title bar
     Console.ResetColor();
     Console.WriteLine();
