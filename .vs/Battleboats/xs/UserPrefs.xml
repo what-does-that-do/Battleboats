@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{FB0CDEB8-970A-46CF-83EE-BBBCADE1CB55}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Battleboats/Helpful.cs">
+    <Files>
+      <File FileName="Battleboats/Program.cs" Line="245" Column="2" />
+      <File FileName="Battleboats/Helpful.cs" Line="11" Column="61" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Battleboats" expanded="True">
+            <Node name="Battleboats" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Battleboats PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

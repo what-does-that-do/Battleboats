@@ -354,7 +354,7 @@ public class GameLoader
             }
         }
         // Show controls footer
-        Helpful.AddWindowFooter("[Arrow Keys] = select game, [ENTER] = resume game, [DELETE] = delete selected game");
+        Helpful.AddWindowFooter("[Arrow Keys] = select game, [ENTER] = resume game, [DELETE] = delete selected game, [ESC] = main menu");
 
         int selectedItem = 0;
         if (options.Length > 0) { // run as long as there is 1+ active games
@@ -411,12 +411,12 @@ public class GameLoader
                 }
             }
         } else {
-            // Draw window header
-            Helpful.AddWindowHeader("LOAD GAME");
-            Console.BackgroundColor = ConsoleColor.Black;
-
             Console.WriteLine("\n");
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.Clear();
+            Helpful.AddWindowHeader("LOAD GAME");
             Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.BackgroundColor = ConsoleColor.Black;
             // Display message and controls. There are no saved games.
             Console.WriteLine("You have no active games.");
             Console.WriteLine("Press Enter to start a new one.");
