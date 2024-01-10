@@ -1,6 +1,8 @@
 # Battleboats
 A simple Battleboats game created entirely in C# for my Computer Science A Level.
 
+![Screenshot of Battleboats home](https://github.com/what-does-that-do/Screenshots/Home.png)
+
 ## Downloading and Running
 First, clone this repo.
 
@@ -20,6 +22,12 @@ Battleboats should now be running in your terminal window.
 - The computer will then try and sink all of your boats. <br>
 - Take it in turns until either you or the computer have sunk all of the opponent's boats. <br>
 - The player who sinks all of the opponent's boats first wins!
+
+### Computer's Turn Example
+![Screenshot of example computer grid](https://github.com/what-does-that-do/Computer.png)
+
+### User's Turn Example
+![Screenshot of example user grid](https://github.com/what-does-that-do/User.png)
 
 ## Controls
 As a rule of thumb, use arrow keys to move the cursor, enter to shoot/select and escape to return to the main menu.
